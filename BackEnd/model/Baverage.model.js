@@ -1,6 +1,6 @@
 const mongoose=require("mongoose")
 
-const beverage=mongoose.Schema({
+const baverage=mongoose.Schema({
     "image": {type:String,required:true},
     "name": {type:String,required:true},
     "price":{type:Number,required:true},
@@ -8,6 +8,6 @@ const beverage=mongoose.Schema({
 })
 
 
-const BeverageModel=mongoose.model("beverage",beverage)
+const BaverageModel=mongoose.model("baverage",baverage)
 
-module.exports=BeverageModel
+module.exports=BaverageModel

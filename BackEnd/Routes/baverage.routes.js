@@ -1,17 +1,17 @@
 const express=require("express")
 
-const BeverageModel=require("../model/Baverage.model")
+const BaverageModel=require("../model/Baverage.model")
 
-const beverage_Router=express.Router();
+const baverage_Router=express.Router();
 
-beverage_Router.get("/",async (req,res)=>{
+baverage_Router.get("/",async (req,res)=>{
     try {
-        const product=await BeverageModel.find();
+        const product=await BaverageModel.find();
         res.send(product)
     } catch (error) {
         res.send({msg:"Error getting product"})
     }
 })
 
-module.exports=beverage_Router
+module.exports=baverage_Router
 
