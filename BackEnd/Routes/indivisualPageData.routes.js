@@ -1,6 +1,6 @@
 const express=require("express")
 
-const IndividualPageDataModel=require("../model/IndividualPageData.model")
+const IndividualPageDataModel=require("../model/IndivisualPageData.model")
 
 const individualPageData_Router=express.Router();
 
