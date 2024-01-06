@@ -1,15 +1,17 @@
-const mongoose=require("mongoose")
+const express=require("express")
 
-const prod_Phone=mongoose.Schema({
-    "id": Number,
-    "img": String,
-    "title": String,
-    "Rs":Number,
-    "Mrp": Number,
-    "saving": Number
+const prod_PhoneModel=require("../model/Prod_Phone.model")
+
+const prod_Phone_Router=express.Router();
+
+prod_Phone_Router.get("/",async (req,res)=>{
+    try {
+        const product=await prod_PhoneModel.find();
+        res.send(product)
+    } catch (error) {
+        res.send({msg:"Error getting product"})
+    }
 })
 
+module.exports=prod_Phone_Router
 
-const Prod_PhoneModel=mongoose.model("prod_Phone",prod_Phone)
-
-module.exports=Prod_PhoneModel

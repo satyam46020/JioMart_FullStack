@@ -6,7 +6,7 @@ const prod_top=mongoose.Schema({
     "title": String,
     "Rs":Number,
     "Mrp": Number,
-    "saving": Number
+    "save": Number
 })
 
 
