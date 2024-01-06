@@ -15,63 +15,63 @@ import axios from "axios";
 import React, { useEffect, useRef, useState } from "react";
 
 const getData = () => {
-  return axios.get("https://kiwi-discovered-pyjama.glitch.me/imagesslider");
+  return axios.get("http://localhost:7000/imagesslider");
 };
 
 const getBeverageData = () => {
-  return axios.get("https://kiwi-discovered-pyjama.glitch.me/baverage");
+  return axios.get("http://localhost:7000/baverage");
 };
 
 const getELectronics = () => {
-  return axios.get("https://kiwi-discovered-pyjama.glitch.me/electronics");
+  return axios.get("http://localhost:7000/electronics");
 };
 
 const getFruitsAndVegetables = () => {
   return axios.get(
-    "https://kiwi-discovered-pyjama.glitch.me/fruitsAndVegetables"
+    "http://localhost:7000/fruitsAndVegetables"
   );
 };
 
 const postBeverage = (payload) => {
   return axios.post(
-    "https://kiwi-discovered-pyjama.glitch.me/baverage",
+    "http://localhost:7000/baverage",
     payload
   );
 };
 
 const PostELectronics = (payload) => {
   return axios.post(
-    "https://kiwi-discovered-pyjama.glitch.me/electronics",
+    "http://localhost:7000/electronics",
     payload
   );
 };
 const postFruitsAndVegetables = (payload) => {
   return axios.post(
-    "https://kiwi-discovered-pyjama.glitch.me/fruitsAndVegetables",
+    "http://localhost:7000/fruitsAndVegetables",
     payload
   );
 };
 
 const deleteBeverage = (id) => {
   return axios.delete(
-    `https://kiwi-discovered-pyjama.glitch.me/baverage/${id}`
+    `http://localhost:7000/baverage/${id}`
   );
 };
 const deleteFruitsAndVegetables = (id) => {
   return axios.delete(
-    `https://kiwi-discovered-pyjama.glitch.me/fruitsAndVegetables/${id}`
+    `http://localhost:7000/fruitsAndVegetables/${id}`
   );
 };
 const deleteElectronics = (id) => {
   return axios.delete(
-    `https://kiwi-discovered-pyjama.glitch.me/electronics/${id}`
+    `http://localhost:7000/electronics/${id}`
   );
 };
 
 const updateBeverage = (id, payload) => {
   return axios({
     method:"patch",
-    url:`https://kiwi-discovered-pyjama.glitch.me/baverage/${id}`,
+    url:`http://localhost:7000/baverage/${id}`,
     data:JSON.stringify(payload),
     headers:{
       'Content-type':"application/json"
@@ -80,14 +80,14 @@ const updateBeverage = (id, payload) => {
 };
 const updateFruitsAndVegetables = (id, payload) => {
   return axios.patch(
-    `https://kiwi-discovered-pyjama.glitch.me/fruitsAndVegetables/${id}`,
+    `http://localhost:7000/fruitsAndVegetables/${id}`,
     { payload }
   );
 };
 const updateElectronics = (id, payload) => {
   return axios({
     method:"patch",
-    url:`https://kiwi-discovered-pyjama.glitch.me/electronics/${id}`,
+    url:`http://localhost:7000/electronics/${id}`,
     data:JSON.stringify(payload),
     headers:{
       'Content-type':"application/json"
@@ -152,7 +152,7 @@ const Adminpanel = () => {
     } else {
       try {
         axios
-          .post(`https://kiwi-discovered-pyjama.glitch.me/imagesslider/${id}`)
+          .post(`http://localhost:7000/imagesslider/${id}`)
           .then(() => {
             toast({
               title: `Sucessfully Added`,
@@ -238,7 +238,7 @@ const Adminpanel = () => {
         };
         axios
           .post(
-            "https://kiwi-discovered-pyjama.glitch.me/imagesslider",
+            "http://localhost:7000/imagesslider",
             product
           )
           .then(() => {

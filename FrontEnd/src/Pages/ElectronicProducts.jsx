@@ -16,31 +16,31 @@ import {
 
 const CurrentIndivisualData = (payload) => {
   return axios.put(
-    "https://kiwi-discovered-pyjama.glitch.me/indivisualPageData",
+    "http://localhost:7000/indivisualPageData",
     payload
   );
 };
 
 const getData = () => {
-  return axios.get("https://kiwi-discovered-pyjama.glitch.me/electronics");
+  return axios.get("http://localhost:7000/electronics");
 };
 
 const sortDataByAsc = () => {
   return axios.get(
-    "https://kiwi-discovered-pyjama.glitch.me/electronics?_sort=price&_order=asc"
+    "http://localhost:7000/electronics?_sort=price&_order=asc"
   );
 };
 
 const sortDataByDesc = () => {
   return axios.get(
-    "https://kiwi-discovered-pyjama.glitch.me/electronics?_sort=price&_order=desc"
+    "http://localhost:7000/electronics?_sort=price&_order=desc"
   );
 };
 
 
 const filterByCategory = (param) => {
   return axios.get(
-    `https://kiwi-discovered-pyjama.glitch.me/electronics?category=${param}`
+    `http://localhost:7000/electronics?category=${param}`
   );
 };
 

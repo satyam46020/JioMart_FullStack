@@ -8,7 +8,7 @@ import Prodcustom from './Prodcustom';
 
 const ProdItems = () => {
   return (
-    <Prodcustom url="https://kiwi-discovered-pyjama.glitch.me/prod_top"/>
+    <Prodcustom url="http://localhost:7000/prod_top"/>
   )
 }
 

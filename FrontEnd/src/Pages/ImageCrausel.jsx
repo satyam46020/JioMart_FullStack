@@ -5,7 +5,7 @@ import React, { useState,useEffect } from 'react'
 const ImageCrausal = () => {
     const[mg,setMet]=useState([])
     useEffect(()=>{
-         axios.get("https://kiwi-discovered-pyjama.glitch.me/img_crau1")
+         axios.get("http://localhost:7000/img_crau1")
     .then((res)=>setMet(res.data))
 
     },[])

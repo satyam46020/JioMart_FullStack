@@ -35,9 +35,11 @@ const singleimage3_Bodycare_Router=require("./Routes/singleimage3_Bodycare.route
 const singleimage4_bigphone_Router=require("./Routes/singleimage4_bigphone.routes")
 const singleimage5_outfit_Router=require("./Routes/singleimage5_outfit.routes")
 const singleimage6_beauty_Router=require("./Routes/singleimage6_beauty.routes")
+const cors=require("cors")
 
 const app=express()
 app.use(express.json())
+app.use(cors({origin:'*'}))
 
 app.post("/signup",async (req,res)=>{
     try {

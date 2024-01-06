@@ -25,7 +25,7 @@ function handleAuth(){
  }
 }
 useEffect(()=>{
-    axios.get("https://kiwi-discovered-pyjama.glitch.me/admin")
+    axios.get("http://localhost:7000/admin")
     .then((res)=>setAdmin(res.data))
 },[])
   return (

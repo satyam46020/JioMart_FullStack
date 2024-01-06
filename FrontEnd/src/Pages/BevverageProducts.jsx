@@ -16,30 +16,30 @@ import {
 } from "../redux/beverage/action";
 const CurrentIndivisualData = (payload) => {
   return axios.put(
-    "https://kiwi-discovered-pyjama.glitch.me/indivisualPageData",
+    "http://localhost:7000/indivisualPageData",
     payload
   );
 };
 
 const getData = () => {
-  return axios.get("https://kiwi-discovered-pyjama.glitch.me/baverage");
+  return axios.get("http://localhost:7000/baverage");
 };
 
 const sortDataByAsc = () => {
   return axios.get(
-    "https://kiwi-discovered-pyjama.glitch.me/baverage?_sort=price&_order=asc"
+    "http://localhost:7000/baverage?_sort=price&_order=asc"
   );
 };
 
 const sortDataByDesc = () => {
   return axios.get(
-    "https://kiwi-discovered-pyjama.glitch.me/baverage?_sort=price&_order=desc"
+    "http://localhost:7000/baverage?_sort=price&_order=desc"
   );
 };
 
 const filterByCategory = (param) => {
   return axios.get(
-    `https://kiwi-discovered-pyjama.glitch.me/baverage?category=${param}`
+    `http://localhost:7000/baverage?category=${param}`
   );
 };
 

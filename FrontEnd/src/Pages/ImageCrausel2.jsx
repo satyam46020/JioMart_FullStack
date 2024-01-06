@@ -7,7 +7,7 @@ const ImageCrausel2 = () => {
   
     const[mg,setMet]=useState([])
     useEffect(()=>{
-         axios.get("https://kiwi-discovered-pyjama.glitch.me/img_crau2")
+         axios.get("http://localhost:7000/img_crau2")
     .then((res)=>setMet(res.data))
 
     },[])

@@ -10,7 +10,7 @@ const Imagesslider = () => {
     return(
         <div>
             
-             <Imagesslidershop url="https://kiwi-discovered-pyjama.glitch.me/imagesslider"/>
+             <Imagesslidershop url="http://localhost:7000/imagesslider"/>
         </div>
     )
 }

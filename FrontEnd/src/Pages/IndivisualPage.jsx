@@ -13,7 +13,7 @@ import { useDispatch } from "react-redux";
 
 const CurrentIndivisualData = (payload) => {
   return axios.put(
-    "https://kiwi-discovered-pyjama.glitch.me/indivisualPageData",
+    "http://localhost:7000/indivisualPageData",
     payload
   );
 };
@@ -38,16 +38,16 @@ const responsive = {
 
 const getData = () => {
   return axios.get(
-    "https://kiwi-discovered-pyjama.glitch.me/indivisualPageData"
+    "http://localhost:7000/indivisualPageData"
   );
 };
 
 const getCarouselData = () => {
-  return axios.get("https://kiwi-discovered-pyjama.glitch.me/carousel_idvPage");
+  return axios.get("http://localhost:7000/carousel_idvPage");
 };
 
 // const AddToCart = (payload) => {
-//   return axios.post("https://kiwi-discovered-pyjama.glitch.me/cart", payload);
+//   return axios.post("http://localhost:7000/cart", payload);
 // };
 
 const IndivisualPage = () => {

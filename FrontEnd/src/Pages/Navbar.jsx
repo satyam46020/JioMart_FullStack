@@ -35,14 +35,14 @@ import { ImCross } from "react-icons/im";
 
 const CurrentIndivisualData = (payload) => {
   return axios.put(
-    "https://kiwi-discovered-pyjama.glitch.me/indivisualPageData",
+    "http://localhost:7000/indivisualPageData",
     payload
   );
 };
 
 
 const getAllData = () => {
-  return axios.get("https://kiwi-discovered-pyjama.glitch.me/alldata");
+  return axios.get("http://localhost:7000/alldata");
 };
 
 function Navbar() {

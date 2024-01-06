@@ -7,7 +7,7 @@ import { Box } from "@chakra-ui/react";
 const Navlist = () => {
   const navigate = useNavigate();
   return (
-    <Box className="navlist" >
+    <Box className="navlist" bg="white" p="4" boxShadow="md" width="100%" zIndex="999">
       <ul>
         <li style={{zIndex:1000}}>
           Groceries
