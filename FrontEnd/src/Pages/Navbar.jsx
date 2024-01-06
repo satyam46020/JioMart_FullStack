@@ -228,7 +228,7 @@ function Navbar() {
             <p onClick={() => navigate("/cart")}>
               <span className="R-Text">Cart</span>
             </p>
-            <ShoppingCartRoundedIcon onClick={() => navigate("/cart")} />
+            <ShoppingCartRoundedIcon onClick={() => navigate("/cart")} style={{ marginTop: "5px" }} />
             <Box
               style={{
                 position: "absolute",

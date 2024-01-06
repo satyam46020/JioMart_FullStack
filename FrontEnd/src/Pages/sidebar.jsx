@@ -3,7 +3,6 @@ import * as AiIcons from "react-icons/ai";
 import { Box, Flex, Image } from "@chakra-ui/react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-
 import SidebarData from "./SidebarData";
 import SidebarData2 from "./SidebarData2";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";

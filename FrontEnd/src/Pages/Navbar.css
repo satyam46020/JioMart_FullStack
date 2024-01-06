@@ -202,9 +202,10 @@ hr{
 
 .R-Text{
   margin-left: -5px ;
+  font-size: 20px;
 }
 .R-input-logo{
-  width: 180px;
+  width: 155px;
   margin-left: -100px;
   cursor: pointer;
 }
