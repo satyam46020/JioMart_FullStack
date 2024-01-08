@@ -4,7 +4,7 @@ Jio Mart is a clone of Jiomart.com. Jio Mart is India's most convenient online g
 
 ##  
 
-This project was built during our construct week at Masai School. It was built by a team of 6 developers and executed in 6 days.
+This is a MERN project which is being built during my construct week at Masai School. It was built and developed by me on a span of 7 days.
        
 ## 🚀 Demo
 
@@ -46,7 +46,7 @@ MONGODB
 
 EXPRESS.JS
 
-
+NODE.js
 
 
 

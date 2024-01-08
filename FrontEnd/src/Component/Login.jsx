@@ -51,9 +51,9 @@ const initMsg = {
             isClosable: true,
             position: "top",
           });
-  
+          console.log(response)
           // Dispatch the getAuthSuccess action with user data
-          dispatch(getAuthSuccess({ firstName: "abcd" }));
+          dispatch(getAuthSuccess({ firstName: "satyama" }));
   
           // Redirect to the registration page or any other desired page
           navigate("/");
