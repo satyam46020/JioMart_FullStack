@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
+import { useDispatch } from "react-redux";
 import {
   Box,
   Image,
@@ -11,44 +12,51 @@ import {
 } from "@chakra-ui/react";
 import axios from "axios";
 import { useNavigate } from "react-router";
+import { getAuthSuccess } from "../redux/Auth/action";
 
 const initMsg = {
   status: false,
   notice: "",
 };
 
-export default function Login() {
-  const [msg, setMsg] = useState(initMsg);
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const toast = useToast();
-  const navigate = useNavigate();
 
-  const handleLogin = async () => {
-    try {
-      const response = await axios.post(
-        "https://tiny-tan-termite-ring.cyclic.app/auth/login",
-        {
-          email: email,
-          password: password,
-        }
-      );
 
-      if (response.status === 200) {
-        // Login successful
-        localStorage.setItem("email", email);
-        localStorage.setItem("token", response.data.token);
-        toast({
-          title: "Login Successful",
-          description: "User logged in successfully.",
-          status: "success",
-          duration: 5000,
-          isClosable: true,
-          position: "top",
-        });
-
-        // Redirect to the registration page or any other desired page
-        navigate("/");
+  export default function Login() {
+    const [msg, setMsg] = useState(initMsg);
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const toast = useToast();
+    const navigate = useNavigate();
+    const dispatch = useDispatch(); // Get the dispatch function
+  
+    const handleLogin = async () => {
+      try {
+        const response = await axios.post(
+          "https://tiny-tan-termite-ring.cyclic.app/auth/login",
+          {
+            email: email,
+            password: password,
+          }
+        );
+  
+        if (response.status === 200) {
+          // Login successful
+          localStorage.setItem("email", email);
+          localStorage.setItem("token", response.data.token);
+          toast({
+            title: "Login Successful",
+            description: "User logged in successfully.",
+            status: "success",
+            duration: 5000,
+            isClosable: true,
+            position: "top",
+          });
+  
+          // Dispatch the getAuthSuccess action with user data
+          dispatch(getAuthSuccess({ firstName: "abcd" }));
+  
+          // Redirect to the registration page or any other desired page
+          navigate("/");
       } else {
         // Handle other cases (e.g., invalid credentials)
         setMsg({ status: true, notice: "Invalid Email or Password" });
