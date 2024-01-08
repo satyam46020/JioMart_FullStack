@@ -46,8 +46,7 @@ export default function Login() {
           position: "top",
         });
 
-        // Redirect to the registration page or any other desired page
-        navigate("/register");
+        navigate("/");
       } else {
         // Handle other cases (e.g., duplicate email)
         setMsg({ status: true, notice: "Email id already exists." });

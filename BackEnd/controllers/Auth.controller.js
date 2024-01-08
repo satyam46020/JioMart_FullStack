@@ -2,24 +2,22 @@ const asyncHandler = require("express-async-handler")
 const Usermodel  = require("../model/User.model")
 const {token} = require("../config/tokengenerator")
 
-const loginController = asyncHandler(async(req, res) => {
-    
-    const { email, password } = req.body
+const loginController = asyncHandler(async (req, res) => {
+    const { email, password } = req.body;
+    const user = await Usermodel.findOne({ email });
+    if (user && (await bcrypt.compare(password, user.password))) {
+         res.status(200).json({
+              _id: user._id,
+              email: user.email,
+              token: token(user._id)
+         });
+    } else {
+         console.log('Entered Password:', password);
+         console.log('User Password in DB:', user ? user.password : 'User not found');
 
-    const user = await Usermodel.findOne({ email })
-
-    if(user && (await bcrypt.compare(password, user.password))) {
-        res.status(200).json({
-            _id: user._id,
-            email: user.email,
-            token: token(user._id)
-        })
+         res.status(401).json({ msg: "Invalid Email and Password" });
     }
-    else {
-        res.status(401)
-        throw new Error("Invalid Email or Password")
-    }
-})
+});
 
 const signupController = asyncHandler(async(req, res) => {
     

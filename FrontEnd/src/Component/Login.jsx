@@ -53,27 +53,7 @@ export default function Login() {
         // Handle other cases (e.g., invalid credentials)
         setMsg({ status: true, notice: "Invalid Email or Password" });
       }
-      if (response.status === 200) {
-        // Login successful
-        localStorage.setItem("email", email);
-        localStorage.setItem("token", response.data.token);
-        localStorage.setItem("user", JSON.stringify(response.data)); // Save user details in localStorage
-  
-        toast({
-          title: "Login Successful",
-          description: "User logged in successfully.",
-          status: "success",
-          duration: 5000,
-          isClosable: true,
-          position: "top",
-        });
-  
-        // Redirect to the dashboard or any other desired page
-        navigate("/");
-      } else {
-        // Handle other cases (e.g., invalid credentials)
-        setMsg({ status: true, notice: "Invalid Email or Password" });
-      }  
+      
     } catch (error) {
       console.error("Error during login:", error);
       setMsg({ status: true, notice: "Failed to log in. Please try again." });
