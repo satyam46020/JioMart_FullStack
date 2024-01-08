@@ -32,4 +32,27 @@ electronics_Router.get("/", async (req, res) => {
   }
 });
 
+// electronics_Router.put("/indivisualPageData", async (req, res) => {
+//   try {
+//     const payload = req.body;
+//     console.log("Data received from individual page:", payload);
+
+//     res.status(200).send({ msg: "Data received successfully" });
+//   } catch (error) {
+//     console.error("Error receiving data from individual page:", error);
+//     res.status(500).send({ msg: "Error receiving data" });
+//   }
+// });
+electronics_Router.put("/indivisualPageData", async (req, res) => {
+  try {
+    const payload = req.body; 
+    const individualPageData = new ElectronicsModel(payload);
+    await individualPageData.save();
+
+    res.status(200).send({ msg: "Data received successfully" });
+  } catch (error) {
+    console.error("Error receiving data from individual page:", error);
+    res.status(500).send({ msg: "Error receiving data" });
+  }
+});
 module.exports = electronics_Router;

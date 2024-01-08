@@ -13,5 +13,18 @@ individualPageData_Router.get("/",async (req,res)=>{
     }
 })
 
+// individualPageData_Router.put("/indivisualPageData", async (req, res) => {
+//     try {
+//       const payload = req.body; 
+//       const individualPageData = new IndividualPageDataModel(payload);
+//       await individualPageData.save();
+  
+//       res.status(200).send({ msg: "Data received successfully" });
+//     } catch (error) {
+//       console.error("Error receiving data from individual page:", error);
+//       res.status(500).send({ msg: "Error receiving data" });
+//     }
+//   });
+
 module.exports=individualPageData_Router
 
