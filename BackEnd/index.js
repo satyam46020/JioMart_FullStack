@@ -35,6 +35,7 @@ const singleimage3_Bodycare_Router=require("./Routes/singleimage3_Bodycare.route
 const singleimage4_bigphone_Router=require("./Routes/singleimage4_bigphone.routes")
 const singleimage5_outfit_Router=require("./Routes/singleimage5_outfit.routes")
 const singleimage6_beauty_Router=require("./Routes/singleimage6_beauty.routes")
+const {authRouter} =require("./Routes/Auth.route")
 const cors=require("cors")
 
 const app=express()
@@ -109,6 +110,7 @@ app.use("/Singleimage3_Bodycare",singleimage3_Bodycare_Router)
 app.use("/Singleimage4_bigphone",singleimage4_bigphone_Router)
 app.use("/Singleimage5_outfit",singleimage5_outfit_Router)
 app.use("/Singleimage6_beauty",singleimage6_beauty_Router)
+app.use("/auth", authRouter);
 
 
 
