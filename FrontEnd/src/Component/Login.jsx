@@ -52,13 +52,10 @@ const initMsg = {
             position: "top",
           });
           console.log(response)
-          // Dispatch the getAuthSuccess action with user data
           dispatch(getAuthSuccess({ firstName: "satyama" }));
   
-          // Redirect to the registration page or any other desired page
           navigate("/");
       } else {
-        // Handle other cases (e.g., invalid credentials)
         setMsg({ status: true, notice: "Invalid Email or Password" });
       }
       
