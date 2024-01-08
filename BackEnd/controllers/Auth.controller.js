@@ -1,6 +1,7 @@
 const asyncHandler = require("express-async-handler")
 const Usermodel  = require("../model/User.model")
 const {token} = require("../config/tokengenerator")
+const bcrypt=require("bcrypt")
 
 const loginController = asyncHandler(async (req, res) => {
     const { email, password } = req.body;

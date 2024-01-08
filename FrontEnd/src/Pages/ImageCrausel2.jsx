@@ -7,7 +7,7 @@ const ImageCrausel2 = () => {
   
     const[mg,setMet]=useState([])
     useEffect(()=>{
-         axios.get("http://localhost:7000/img_crau2")
+         axios.get("https://tiny-tan-termite-ring.cyclic.app/img_crau2")
     .then((res)=>setMet(res.data))
 
     },[])

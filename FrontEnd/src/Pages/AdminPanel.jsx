@@ -15,63 +15,63 @@ import axios from "axios";
 import React, { useEffect, useRef, useState } from "react";
 
 const getData = () => {
-  return axios.get("http://localhost:7000/imagesslider");
+  return axios.get("https://tiny-tan-termite-ring.cyclic.app/imagesslider");
 };
 
 const getBeverageData = () => {
-  return axios.get("http://localhost:7000/baverage");
+  return axios.get("https://tiny-tan-termite-ring.cyclic.app/baverage");
 };
 
 const getELectronics = () => {
-  return axios.get("http://localhost:7000/electronics");
+  return axios.get("https://tiny-tan-termite-ring.cyclic.app/electronics");
 };
 
 const getFruitsAndVegetables = () => {
   return axios.get(
-    "http://localhost:7000/fruitsAndVegetables"
+    "https://tiny-tan-termite-ring.cyclic.app/fruitsAndVegetables"
   );
 };
 
 const postBeverage = (payload) => {
   return axios.post(
-    "http://localhost:7000/baverage",
+    "https://tiny-tan-termite-ring.cyclic.app/baverage",
     payload
   );
 };
 
 const PostELectronics = (payload) => {
   return axios.post(
-    "http://localhost:7000/electronics",
+    "https://tiny-tan-termite-ring.cyclic.app/electronics",
     payload
   );
 };
 const postFruitsAndVegetables = (payload) => {
   return axios.post(
-    "http://localhost:7000/fruitsAndVegetables",
+    "https://tiny-tan-termite-ring.cyclic.app/fruitsAndVegetables",
     payload
   );
 };
 
 const deleteBeverage = (id) => {
   return axios.delete(
-    `http://localhost:7000/baverage/${id}`
+    `https://tiny-tan-termite-ring.cyclic.app/baverage/${id}`
   );
 };
 const deleteFruitsAndVegetables = (id) => {
   return axios.delete(
-    `http://localhost:7000/fruitsAndVegetables/${id}`
+    `https://tiny-tan-termite-ring.cyclic.app/fruitsAndVegetables/${id}`
   );
 };
 const deleteElectronics = (id) => {
   return axios.delete(
-    `http://localhost:7000/electronics/${id}`
+    `https://tiny-tan-termite-ring.cyclic.app/electronics/${id}`
   );
 };
 
 const updateBeverage = (id, payload) => {
   return axios({
     method:"patch",
-    url:`http://localhost:7000/baverage/${id}`,
+    url:`https://tiny-tan-termite-ring.cyclic.app/baverage/${id}`,
     data:JSON.stringify(payload),
     headers:{
       'Content-type':"application/json"
@@ -80,14 +80,14 @@ const updateBeverage = (id, payload) => {
 };
 const updateFruitsAndVegetables = (id, payload) => {
   return axios.patch(
-    `http://localhost:7000/fruitsAndVegetables/${id}`,
+    `https://tiny-tan-termite-ring.cyclic.app/fruitsAndVegetables/${id}`,
     { payload }
   );
 };
 const updateElectronics = (id, payload) => {
   return axios({
     method:"patch",
-    url:`http://localhost:7000/electronics/${id}`,
+    url:`https://tiny-tan-termite-ring.cyclic.app/electronics/${id}`,
     data:JSON.stringify(payload),
     headers:{
       'Content-type':"application/json"
@@ -152,7 +152,7 @@ const Adminpanel = () => {
     } else {
       try {
         axios
-          .post(`http://localhost:7000/imagesslider/${id}`)
+          .post(`https://tiny-tan-termite-ring.cyclic.app/imagesslider/${id}`)
           .then(() => {
             toast({
               title: `Sucessfully Added`,
@@ -238,7 +238,7 @@ const Adminpanel = () => {
         };
         axios
           .post(
-            "http://localhost:7000/imagesslider",
+            "https://tiny-tan-termite-ring.cyclic.app/imagesslider",
             product
           )
           .then(() => {

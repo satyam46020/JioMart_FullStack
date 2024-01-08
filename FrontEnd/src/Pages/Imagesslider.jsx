@@ -10,7 +10,7 @@ const Imagesslider = () => {
     return(
         <div>
             
-             <Imagesslidershop url="http://localhost:7000/imagesslider"/>
+             <Imagesslidershop url="https://tiny-tan-termite-ring.cyclic.app/imagesslider"/>
         </div>
     )
 }

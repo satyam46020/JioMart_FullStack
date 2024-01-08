@@ -16,33 +16,33 @@ import { AddToCart } from "../redux/Cart/action";
 
 const CurrentIndivisualData = (payload) => {
   return axios.put(
-    "http://localhost:7000/indivisualPageData",
+    "https://tiny-tan-termite-ring.cyclic.app/indivisualPageData",
     payload
   );
 };
 
 const getData = () => {
   return axios.get(
-    "http://localhost:7000/fruitsAndVegetables"
+    "https://tiny-tan-termite-ring.cyclic.app/fruitsAndVegetables"
   );
 };
 
 const sortDataByAsc = () => {
   return axios.get(
-    "http://localhost:7000/fruitsAndVegetables?_sort=price&_order=asc"
+    "https://tiny-tan-termite-ring.cyclic.app/fruitsAndVegetables?_sort=price&_order=asc"
   );
 };
 
 const sortDataByDesc = () => {
   return axios.get(
-    "http://localhost:7000/fruitsAndVegetables?_sort=price&_order=desc"
+    "https://tiny-tan-termite-ring.cyclic.app/fruitsAndVegetables?_sort=price&_order=desc"
   );
 };
 
 
 const filterByCategory = (param) => {
   return axios.get(
-    `http://localhost:7000/fruitsAndVegetables?category=${param}`
+    `https://tiny-tan-termite-ring.cyclic.app/fruitsAndVegetables?category=${param}`
   );
 };
 

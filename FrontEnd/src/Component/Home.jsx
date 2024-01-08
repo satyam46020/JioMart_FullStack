@@ -46,7 +46,7 @@ const Home = () => {
       </Box>
       <Box>
       <Text textAlign={"left"} ml={"40px"} fontSize={"20px"} fontWeight={600} mt={"9px"} >Shop From Top Categories</Text>
-        <Imagesslidershop url="http://localhost:7000/imagesslider1_shop"/>
+        <Imagesslidershop url="https://tiny-tan-termite-ring.cyclic.app/imagesslider1_shop"/>
       </Box>
       <Box>
         <ImageCrausal/>
@@ -57,52 +57,52 @@ const Home = () => {
       </Box>
       <Box>
       <Text textAlign={"left"} ml={"40px"} fontSize={"25px"} fontWeight= {'bold'}>Top Deals</Text>
-        <Prodcustom url="http://localhost:7000/prod_Phone"/>
+        <Prodcustom url="https://tiny-tan-termite-ring.cyclic.app/prod_Phone"/>
       </Box>
       <Box>
       <Text textAlign={"left"} ml={"40px"} fontSize={"20px"} fontWeight={500} mt={"5px"}> Shop By Categoires</Text>
-        <Imagesslider url="http://localhost:7000/imagesslider1_shop"/>
+        <Imagesslider url="https://tiny-tan-termite-ring.cyclic.app/imagesslider1_shop"/>
       </Box>
       <Box>
         <ImageCrausel2/>
       </Box>
       <Box>
       <Text textAlign={"left"} ml={"40px"} fontSize={"25px"} fontWeight= {'bold'}>Top Deals</Text>
-        <Prodcustom  url="http://localhost:7000/prod_Phone"/>
+        <Prodcustom  url="https://tiny-tan-termite-ring.cyclic.app/prod_Phone"/>
       </Box>
       <Box>
       <Text textAlign={"left"} ml={"40px"} fontSize={"20px"} fontWeight={600} mt={"9px"} >Top Living Categories</Text>
-      <Imagesslidershop url="http://localhost:7000/imagesslider3_living"/>
+      <Imagesslidershop url="https://tiny-tan-termite-ring.cyclic.app/imagesslider3_living"/>
       </Box>
       <Box>
       <Text textAlign={"left"} ml={"40px"} fontSize={"25px"} fontWeight= {'bold'}>Top Deals</Text>
-        <Prodcustom url="http://localhost:7000/prod_Phone"/>
+        <Prodcustom url="https://tiny-tan-termite-ring.cyclic.app/prod_Phone"/>
       </Box>
       <Box>
         <ImageCrausal3/>
       </Box>
       <Box>
       <Text textAlign={"left"} ml={"40px"} fontSize={"20px"} fontWeight={600} mt={"9px"} >Top Fashion Categories</Text>
-      <Imagesslidershop url="http://localhost:7000/imagesslider4_fashion"/>
+      <Imagesslidershop url="https://tiny-tan-termite-ring.cyclic.app/imagesslider4_fashion"/>
       </Box>
       <Box>
       <Text textAlign={"left"} ml={"40px"} fontSize={"20px"} fontWeight={600} mt={"9px"} >Top Makeup Categories</Text>
-      <Imagesslidershop url="http://localhost:7000/imagesslider5_Makeup"/>
+      <Imagesslidershop url="https://tiny-tan-termite-ring.cyclic.app/imagesslider5_Makeup"/>
       </Box>
       <Box>
       <Text textAlign={"left"} ml={"40px"} fontSize={"25px"} fontWeight= {'bold'}>Top Deals</Text>
-        <Prodcustom url="http://localhost:7000/prod_Phone"/>
+        <Prodcustom url="https://tiny-tan-termite-ring.cyclic.app/prod_Phone"/>
       </Box>
       <Box>
         <ImageCrausal4/>
       </Box>
       <Box>
       <Text textAlign={"left"} ml={"40px"} fontSize={"20px"} fontWeight={600} mt={"9px"} >Babies Categories</Text>
-      <Imagesslidershop url="http://localhost:7000/imagesslider6_Baby"/>
+      <Imagesslidershop url="https://tiny-tan-termite-ring.cyclic.app/imagesslider6_Baby"/>
       </Box>
       <Box mb={"20px"}>
       <Text textAlign={"left"} ml={"40px"} fontSize={"25px"} fontWeight= {'bold'}>Top Deals</Text>
-        <Prodcustom url="http://localhost:7000/prod_Phone"/>
+        <Prodcustom url="https://tiny-tan-termite-ring.cyclic.app/prod_Phone"/>
       </Box>
     </Box>
       

@@ -10,7 +10,7 @@ import "./All.css"
 const Singleslider = () => {
     const[single, setSingle]=useState([])
     useEffect(()=>{
-         axios.get("http://localhost:7000/Singleimage")
+         axios.get("https://tiny-tan-termite-ring.cyclic.app/Singleimage")
     .then((res)=>setSingle(res.data))
 
     },[])

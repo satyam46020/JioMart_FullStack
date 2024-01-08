@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react'
 const ImageCrausal4 = () => {
     const[g,setMe]=useState([])
     useEffect(()=>{
-         axios.get("http://localhost:7000/img_crau4")
+         axios.get("https://tiny-tan-termite-ring.cyclic.app/img_crau4")
     .then((res)=>setMe(res.data))
 
     },[])

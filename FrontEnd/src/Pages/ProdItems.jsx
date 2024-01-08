@@ -8,7 +8,7 @@ import Prodcustom from './Prodcustom';
 
 const ProdItems = () => {
   return (
-    <Prodcustom url="http://localhost:7000/prod_top"/>
+    <Prodcustom url="https://tiny-tan-termite-ring.cyclic.app/prod_top"/>
   )
 }
 

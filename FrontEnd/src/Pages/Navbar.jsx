@@ -35,14 +35,14 @@ import { ImCross } from "react-icons/im";
 
 const CurrentIndivisualData = (payload) => {
   return axios.put(
-    "http://localhost:7000/indivisualPageData",
+    "https://tiny-tan-termite-ring.cyclic.app/indivisualPageData",
     payload
   );
 };
 
 
 const getAllData = () => {
-  return axios.get("http://localhost:7000/alldata");
+  return axios.get("https://tiny-tan-termite-ring.cyclic.app/alldata");
 };
 
 function Navbar() {

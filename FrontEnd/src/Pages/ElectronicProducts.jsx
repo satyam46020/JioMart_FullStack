@@ -16,31 +16,31 @@ import {
 
 const CurrentIndivisualData = (payload) => {
   return axios.put(
-    "http://localhost:7000/indivisualPageData",
+    "https://tiny-tan-termite-ring.cyclic.app/indivisualPageData",
     payload
   );
 };
 
 const getData = () => {
-  return axios.get("http://localhost:7000/electronics");
+  return axios.get("https://tiny-tan-termite-ring.cyclic.app/electronics");
 };
 
 const sortDataByAsc = () => {
   return axios.get(
-    "http://localhost:7000/electronics?_sort=price&_order=asc"
+    "https://tiny-tan-termite-ring.cyclic.app/electronics?_sort=price&_order=asc"
   );
 };
 
 const sortDataByDesc = () => {
   return axios.get(
-    "http://localhost:7000/electronics?_sort=price&_order=desc"
+    "https://tiny-tan-termite-ring.cyclic.app/electronics?_sort=price&_order=desc"
   );
 };
 
 
 const filterByCategory = (param) => {
   return axios.get(
-    `http://localhost:7000/electronics?category=${param}`
+    `https://tiny-tan-termite-ring.cyclic.app/electronics?category=${param}`
   );
 };
 

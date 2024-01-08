@@ -13,7 +13,7 @@ import { useDispatch } from "react-redux";
 
 const CurrentIndivisualData = (payload) => {
   return axios.put(
-    "http://localhost:7000/indivisualPageData",
+    "https://tiny-tan-termite-ring.cyclic.app/indivisualPageData",
     payload
   );
 };
@@ -38,16 +38,16 @@ const responsive = {
 
 const getData = () => {
   return axios.get(
-    "http://localhost:7000/indivisualPageData"
+    "https://tiny-tan-termite-ring.cyclic.app/indivisualPageData"
   );
 };
 
 const getCarouselData = () => {
-  return axios.get("http://localhost:7000/carousel_idvPage");
+  return axios.get("https://tiny-tan-termite-ring.cyclic.app/carousel_idvPage");
 };
 
 // const AddToCart = (payload) => {
-//   return axios.post("http://localhost:7000/cart", payload);
+//   return axios.post("https://tiny-tan-termite-ring.cyclic.app/cart", payload);
 // };
 
 const IndivisualPage = () => {

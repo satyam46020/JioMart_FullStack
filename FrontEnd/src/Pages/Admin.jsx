@@ -25,7 +25,7 @@ function handleAuth(){
  }
 }
 useEffect(()=>{
-    axios.get("http://localhost:7000/admin")
+    axios.get("https://tiny-tan-termite-ring.cyclic.app/admin")
     .then((res)=>setAdmin(res.data))
 },[])
   return (

@@ -27,7 +27,7 @@ export default function Login() {
   const handleLogin = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:7000/auth/login",
+        "https://tiny-tan-termite-ring.cyclic.app/auth/login",
         {
           email: email,
           password: password,

@@ -16,30 +16,30 @@ import {
 } from "../redux/beverage/action";
 const CurrentIndivisualData = (payload) => {
   return axios.put(
-    "http://localhost:7000/indivisualPageData",
+    "https://tiny-tan-termite-ring.cyclic.app/indivisualPageData",
     payload
   );
 };
 
 const getData = () => {
-  return axios.get("http://localhost:7000/baverage");
+  return axios.get("https://tiny-tan-termite-ring.cyclic.app/baverage");
 };
 
 const sortDataByAsc = () => {
   return axios.get(
-    "http://localhost:7000/baverage?_sort=price&_order=asc"
+    "https://tiny-tan-termite-ring.cyclic.app/baverage?_sort=price&_order=asc"
   );
 };
 
 const sortDataByDesc = () => {
   return axios.get(
-    "http://localhost:7000/baverage?_sort=price&_order=desc"
+    "https://tiny-tan-termite-ring.cyclic.app/baverage?_sort=price&_order=desc"
   );
 };
 
 const filterByCategory = (param) => {
   return axios.get(
-    `http://localhost:7000/baverage?category=${param}`
+    `https://tiny-tan-termite-ring.cyclic.app/baverage?category=${param}`
   );
 };
 
