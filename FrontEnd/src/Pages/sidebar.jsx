@@ -10,7 +10,7 @@ import app from "../Resources/app.png";
 import play from "../Resources/play.png";
 import { Navigate, useNavigate } from "react-router";
 const Sidebar = ({ sidebar, showSidebar }) => {
-  const val = JSON.parse(localStorage.getItem("Jio Mart User"));
+  const val = (localStorage.getItem("Jio Mart User"));
   const navigate = useNavigate();
   return (
     <Box zIndex={999}>

@@ -51,8 +51,7 @@ const initMsg = {
             isClosable: true,
             position: "top",
           });
-          console.log(response)
-          dispatch(getAuthSuccess({ firstName: "satyama" }));
+          dispatch(getAuthSuccess({ firstName: response.data.name }));
   
           navigate("/");
       } else {

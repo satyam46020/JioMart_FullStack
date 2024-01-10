@@ -232,7 +232,7 @@ function Navbar() {
             <Box
               style={{
                 position: "absolute",
-                right: "22%",
+                right: "21.5%",
                 backgroundColor: "red",
                 color: "white",
                 borderRadius: "40px",
@@ -257,7 +257,7 @@ function Navbar() {
                 style={{ cursor: "pointer" }}
                 onClick={handleLogin}
               >
-                {val || "Sign in/ Sign Up"}
+                {val || "LogIn/SignUp"}
               </p>
               {val != null ? (
                 <Menu>
